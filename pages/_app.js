@@ -3,7 +3,7 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div style={{ minHeight: '100vh' }}>
+    <div>
       <Component {...pageProps} />
     </div>
   )

@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { useState } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 
+import Sandbox from '../src/components/svgsandbox/sandbox'
+
 
 
 export default function Home() {
@@ -16,14 +18,8 @@ export default function Home() {
       {/* header */}
 
       {/* main */}
-      <main className='my-2' style={{ minHeight: '75vh' }}>
-        <Container fluid>
-          <Row>
-            <Col xs={12}>
-              <h1>Hi</h1>
-            </Col>
-          </Row>
-        </Container>
+      <main className='my-2' style={{ minHeight: '75vh', minWidth: '100vw' }}>
+        <Sandbox />
       </main>
 
       {/* footer */}
@@ -35,6 +31,6 @@ export default function Home() {
           </div>
         </div>
       </Container>
-    </div>
+    </div >
   );
 }

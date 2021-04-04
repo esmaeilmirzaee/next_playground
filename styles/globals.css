@@ -15,3 +15,14 @@ a {
   box-sizing: border-box;
   font-family: 'Vazir';
 }
+
+.sandbox {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 100px 300px;
+}
+
+.canvas {
+  padding: 4rem;
+}
