@@ -3,6 +3,7 @@ import * as d3 from 'd3'
 
 export default function Sandbox() {
   const canvas = useRef(null)
+  const id = 1
 
   useEffect(() => {
     showCanvas()
@@ -62,7 +63,7 @@ export default function Sandbox() {
   }
   return (
     <div className='sandbox'>
-      <div className="canvas" ref={canvas}></div>
+      <div key={id} className="canvas" ref={canvas}></div>
     </div>
   )
 }
