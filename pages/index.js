@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Next App Playground</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -25,7 +25,7 @@ export default function Home() {
         <Container fluid>
           <Row>
             <Col xs={12}>
-              <ChartWrapper gender="men" />
+              <h1>Hi</h1>
             </Col>
           </Row>
         </Container>
