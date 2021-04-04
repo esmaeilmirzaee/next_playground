@@ -1,16 +1,15 @@
-import Head from 'next/head'
-import { useState } from 'react'
-import { Container, Col, Row } from 'react-bootstrap'
+import Head from 'next/head';
+import { useState } from 'react';
+import { Container, Col, Row } from 'react-bootstrap';
 
-import Header from '../src/components/Header'
-import SignIn from '../src/screens/auth/SignIn'
-import Register from '../src/screens/auth/Register'
+import Header from '../src/components/Header';
+import ChartWrapper from '../src/components/d3/chartWrapper';
 
 
 
 export default function Home() {
-  const [signInVisibility, setSignInVisiblity] = useState(false)
-  const [registerVisibility, setRegisterVisibility] = useState(false)
+  const [signInVisibility, setSignInVisiblity] = useState(false);
+  const [registerVisibility, setRegisterVisibility] = useState(false);
 
   return (
     <div>
@@ -24,17 +23,11 @@ export default function Home() {
       {/* main */}
       <main className='my-2' style={{ minHeight: '75vh' }}>
         <Container fluid>
-          <Col>
-            <Row>
-              {
-                signInVisibility &&
-                <SignIn signInVisibility={signInVisibility} setSignInVisiblity={setSignInVisiblity} setRegisterVisibility={setRegisterVisibility} />}
-              {registerVisibility ?
-                <Register registerVisibility={registerVisibility} setRegisterVisibility={setRegisterVisibility} /> :
-                <h1>Yep!</h1>
-              }
-            </Row>
-          </Col>
+          <Row>
+            <Col xs={12}>
+              <ChartWrapper gender="men" />
+            </Col>
+          </Row>
         </Container>
       </main>
 
@@ -50,5 +43,5 @@ export default function Home() {
         </div>
       </Container>
     </div>
-  )
+  );
 }
