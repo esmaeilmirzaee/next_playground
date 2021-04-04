@@ -2,9 +2,6 @@ import Head from 'next/head';
 import { useState } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 
-import Header from '../src/components/Header';
-import ChartWrapper from '../src/components/d3/chartWrapper';
-
 
 
 export default function Home() {
