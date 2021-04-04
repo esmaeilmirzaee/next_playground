@@ -5,8 +5,6 @@ import { Container, Col, Row } from 'react-bootstrap';
 
 
 export default function Home() {
-  const [signInVisibility, setSignInVisiblity] = useState(false);
-  const [registerVisibility, setRegisterVisibility] = useState(false);
 
   return (
     <div>
@@ -16,7 +14,7 @@ export default function Home() {
       </Head>
 
       {/* header */}
-      <Header signInVisibility={signInVisibility} setSignInVisiblity={setSignInVisiblity} registerVisibility={registerVisibility} setRegisterVisibility={setRegisterVisibility} />
+
       {/* main */}
       <main className='my-2' style={{ minHeight: '75vh' }}>
         <Container fluid>
@@ -29,12 +27,10 @@ export default function Home() {
       </main>
 
       {/* footer */}
-
-
       <Container as='footer' fluid>
         <div className="card border-light">
           <div className="card-body">
-            <span className="card-title"><img src='https://www.flaticon.com/svg/vstatic/svg/3884/3884466.svg?token=exp=1617359001~hmac=c874397d70928fe92b16bc1d620cef78' width='30' height='30' className='d-inline-block align-top' /></span>
+            <span className="card-title"><img src='https://thebeaver.xyz/static/media/TheBeaverLight.cc3563db.svg' width='30' height='30' className='d-inline-block align-top' /></span>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
